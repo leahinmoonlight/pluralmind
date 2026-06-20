@@ -50,3 +50,7 @@ import type { Member, System } from 'pluralmind'
 ```
 
 Even if you're not using TypeScript, you may want to check out [types.ts](https://git.gay/leahinmoonlight/pluralmind/src/branch/main/src/types.ts) since it documents everything in far more detail.
+
+### Want a full example?
+
+Our Pluralmind browser extension is open source, and uses this library. You can check out its full implementation [over here](https://git.gay/leahinmoonlight/pluralmind-browser).
