@@ -1,0 +1,57 @@
+{
+    "name": "pluralmind",
+    "version": "1.0.0",
+    "description": "Let folks know who's speaking. Pluralmind allows plural folks to share which of their members is sending a message on Twitch.",
+    "scripts": {
+        "build": "tsdown",
+        "dev": "tsdown --watch",
+        "typecheck": "tsc --noEmit",
+        "prepare": "pnpm build"
+    },
+    "keywords": [
+        "pluralmind",
+        "plurality",
+        "plural",
+        "twitch",
+        "headmate"
+    ],
+    "author": "leahinmoonlight",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://git.gay/leahinmoonlight/pluralmind.git"
+    },
+    "devEngines": {
+        "packageManager": {
+            "name": "pnpm",
+            "version": "^11.6.0",
+            "onFail": "download"
+        }
+    },
+    "type": "module",
+    "devDependencies": {
+        "tsdown": "^0.22.3",
+        "typescript": "^6.0.3"
+    },
+    "files": [
+        "dist"
+    ],
+    "main": "./dist/index.cjs",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.cts",
+    "unpkg": "./dist/index.iife.js",
+    "jsdelivr": "./dist/index.iife.js",
+    "sideEffects": false,
+    "exports": {
+        ".": {
+            "import": {
+                "types": "./dist/index.d.mts",
+                "default": "./dist/index.mjs"
+            },
+            "require": {
+                "types": "./dist/index.d.cts",
+                "default": "./dist/index.cjs"
+            }
+        }
+    }
+}

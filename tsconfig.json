@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "module": "preserve",
+        "target": "es2020",
+        "lib": ["ES2020", "DOM", "DOM.Iterable"],
+        "types": [],
+        "noEmit": true,
+        "strict": true,
+        "verbatimModuleSyntax": true,
+        "isolatedModules": true,
+        "moduleDetection": "force",
+        "skipLibCheck": true,
+        "noUncheckedSideEffectImports": true,
+        "noUncheckedIndexedAccess": true,
+    }
+}
