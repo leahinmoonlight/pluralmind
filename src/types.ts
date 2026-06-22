@@ -76,6 +76,9 @@ export interface ProxiedMessage {
     /** The member that was identified to be sending the message. */
     member: Member
 
+    /** The system that the member belongs to. */
+    system: System
+
     /**
      * The color to display this member's name as in chat. Uses the member's
      * color when set, and falls back to the system's color if not.

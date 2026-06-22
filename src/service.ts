@@ -116,6 +116,7 @@ export const getProxiedMessage = (system: System | null, body: string): ProxiedM
 
     return {
         member,
+        system,
         body,
         color: member.color ?? system.color,
         pronouns: member.pronouns ?? system.pronouns,
