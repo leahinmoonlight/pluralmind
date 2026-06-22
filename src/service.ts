@@ -76,7 +76,8 @@ export const detectProxyInMessage = (system: System, body: string): { member: Me
     if (splitByColon.length < 2) return
 
     // Ensure the prefix isn't empty
-    const proxyPrefix = splitByColon[0]
+    let proxyPrefix = splitByColon[0]
+    if (config.ignoreLeadingWhitespace) proxyPrefix = proxyPrefix?.trimStart()
     if (!proxyPrefix?.length) return
 
     // Check if the prefix matches any members in this system
@@ -88,7 +89,7 @@ export const detectProxyInMessage = (system: System, body: string): { member: Me
 
     return {
         member: proxiedMember,
-        cleanBody: splitByColon.slice(1).join(': '),
+        cleanBody: body.replace(`${proxyPrefix}: `, ''),
     }
 }
 

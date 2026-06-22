@@ -109,4 +109,10 @@ export interface PluralmindConfig {
      * requests for it will result in a reload.
      */
     cacheDuration: number
+
+    /**
+     * Whether leading whitespace should be ignored when detecting proxy
+     * prefixes.
+     */
+    ignoreLeadingWhitespace: boolean
 }
