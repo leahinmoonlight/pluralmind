@@ -6,6 +6,12 @@ export const config: PluralmindConfig = {
     ignoreLeadingWhitespace: true,
 }
 
+/**
+ * Updates the Pluralmind config.
+ * Check out {@link PluralmindConfig} for available options.
+ *
+ * @group Advanced
+ */
 export const updateConfig = (updates: Partial<PluralmindConfig>) => {
     Object.assign(config, updates)
 }

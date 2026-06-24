@@ -99,12 +99,16 @@ export interface PluralmindConfig {
      * The amount of time to cache a system's data for, in milliseconds.
      * After this time, the data will be considered expired and subsequent
      * requests for it will result in a reload.
+     *
+     * Defaults to `900000` (15 minutes).
      */
     cacheDuration: number
 
     /**
      * Whether leading whitespace should be ignored when detecting proxy
      * prefixes.
+     *
+     * Defaults to `true`.
      */
     ignoreLeadingWhitespace: boolean
 }
