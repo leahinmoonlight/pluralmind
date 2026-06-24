@@ -1,0 +1,25 @@
+{
+    "plugin": [
+        "typedoc-plugin-markdown",
+        "typedoc-vitepress-theme"
+    ],
+    "entryPoints": [
+        "src/index.ts"
+    ],
+    "out": "docs/api",
+    "name": "API Reference",
+    "readme": "none",
+    "docsRoot": "./docs",
+    "excludeInternal": true,
+    "groupOrder": [
+        "Functions",
+        "Interfaces",
+        "Type Aliases",
+        "*",
+        "Advanced",
+    ],
+    "sort": [
+        "kind",
+        "source-order",
+    ]
+}

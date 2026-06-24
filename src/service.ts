@@ -13,6 +13,8 @@ const systemCache: Record<TwitchId, CachedSystem> = {}
  * Retrieves the previously cached system data, along with whether the data
  * should be considered expired. Returns null if no cached data exists for the
  * given id.
+ *
+ * @group Advanced
  */
 export const getCachedSystem = (id: TwitchId): CacheHit | undefined => {
     const cached = systemCache[id]
@@ -28,7 +30,9 @@ export const getCachedSystem = (id: TwitchId): CacheHit | undefined => {
  * When called with an ID that is already being loaded, that initial call's
  * promise will be reused rather than starting another load.
  * Note: You generally should not need to call this directly. It is recommended
- * to use getSystem instead since that handles caching.
+ * to use {@link getSystem} instead since that handles caching.
+ *
+ * @group Advanced
  */
 export const loadSystem = (id: TwitchId): Promise<System | null> => {
     // Check if there's already a pending fetch for this system
@@ -68,7 +72,10 @@ export const getSystem = async (id: TwitchId): Promise<System | null> => {
 /**
  * Identifies if a configured proxy prefix was used for this message.
  * You generally shouldn't need to call this directly, and should use
- * getProxiedMessage instead since it takes autoproxies into consideration.
+ * {@link getProxiedMessage} instead since it takes autoproxies into
+ * consideration.
+ *
+ * @group Advanced
  */
 export const detectProxyInMessage = (system: System, body: string): { member: Member, cleanBody: string } | undefined => {
     // Sanity check that this message looks like it has a proxy prefix

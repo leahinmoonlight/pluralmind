@@ -1,4 +1,36 @@
+/**
+ * The user's numerical Twitch ID, or their login username.
+ * Note: It is always preferable to use the user's numerical ID since that
+ * identifier never changes. If you provide their username, we may not be able
+ * to match them if they have changed their username recently.
+ */
 export type TwitchId = string | number
+
+export interface System {
+    /** The numeric ID of the system's Twitch account. */
+    id: number
+
+    /**
+     * The fallback color that will be used when a member has not specified
+     * their own color.
+     */
+    color: string | null
+
+    /**
+     * The fallback pronouns that will be used when a member has not specified
+     * their own pronouns.
+     */
+    pronouns: string | null
+
+    /**
+     * If set, messages sent without a proxy prefix will be automatically
+     * proxied as the target member.
+     */
+    autoproxy_member_id: number | null
+
+    /** The list of members in this system. */
+    members: Member[]
+}
 
 export interface Member {
     /**
@@ -30,46 +62,6 @@ export interface Member {
      * When set, this is free text (i.e. "they/them", or "she/they").
      */
     pronouns: string | null
-}
-
-export interface System {
-    /** The numeric ID of the system's Twitch account. */
-    id: number
-
-    /**
-     * The fallback color that will be used when a member has not specified
-     * their own color.
-     */
-    color: string | null
-
-    /**
-     * The fallback pronouns that will be used when a member has not specified
-     * their own pronouns.
-     */
-    pronouns: string | null
-
-    /**
-     * If set, messages sent without a proxy prefix will be automatically
-     * proxied as the target member.
-     */
-    autoproxy_member_id: number | null
-
-    /** The list of members in this system. */
-    members: Member[]
-}
-
-export interface CacheHit {
-    /**
-     * The system, if one exists. This will be null if there is no system
-     * associated with the Twitch user.
-     */
-    system: System | null
-
-    /**
-     * Whether the cached data was loaded too long ago to be considered fresh.
-     * This is configurable via {@link PluralmindConfig.cacheDuration}.
-     */
-    expired: boolean
 }
 
 export interface ProxiedMessage {
@@ -115,4 +107,18 @@ export interface PluralmindConfig {
      * prefixes.
      */
     ignoreLeadingWhitespace: boolean
+}
+
+export interface CacheHit {
+    /**
+     * The system, if one exists. This will be null if there is no system
+     * associated with the Twitch user.
+     */
+    system: System | null
+
+    /**
+     * Whether the cached data was loaded too long ago to be considered fresh.
+     * This is configurable via {@link PluralmindConfig.cacheDuration}.
+     */
+    expired: boolean
 }
