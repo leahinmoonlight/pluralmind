@@ -33,7 +33,7 @@ export default defineConfig({
         ],
 
         socialLinks: [
-            { icon: 'git', link: 'https://git.gay/leahinmoonlight/pluralmind' },
+            { icon: 'git', link: 'https://github.com/leahinmoonlight/pluralmind' },
             { icon: 'discord', link: 'https://discord.gg/3TseAS2fne' },
             { icon: 'bluesky', link: 'https://bsky.app/profile/leahinmoonlight.com' },
         ]

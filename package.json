@@ -23,7 +23,7 @@
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://git.gay/leahinmoonlight/pluralmind"
+        "url": "git+https://github.com/leahinmoonlight/pluralmind.git"
     },
     "devEngines": {
         "packageManager": {

@@ -86,4 +86,4 @@ That's it! You can use those attributes to change how you render that member's m
 
 ## Want a full example?
 
-Our Pluralmind browser extension is open source, and uses this library. You can check out its full implementation [over here](https://git.gay/leahinmoonlight/pluralmind-browser).
+Our Pluralmind browser extension is open source, and uses this library. You can check out its full implementation [over here](https://github.com/leahinmoonlight/pluralmind-browser).

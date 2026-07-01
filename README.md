@@ -6,6 +6,12 @@ This library is designed to make it fast and simple to add plurality support to 
 
 [![npm version](https://img.shields.io/npm/v/pluralmind?color=ff69b4)](https://www.npmjs.com/package/pluralmind) [![license](https://img.shields.io/npm/l/pluralmind?color=ff69b4)](./LICENSE)
 
+## Guides and References
+
+Check out the [Pluralmind Docs](https://docs.pluralmind.chat/) for guides, as well as a full [API Reference](https://docs.pluralmind.chat/api/).
+
+Everything below is covered in more detail in our [Quickstart Guide](https://docs.pluralmind.chat/quickstart.html).
+
 ## Installation
 
 With npm (or your favorite package manager):
@@ -49,8 +55,6 @@ We're also fully TypeScript compatible! You can import any types you need from t
 import type { Member, System } from 'pluralmind'
 ```
 
-Even if you're not using TypeScript, you may want to check out [types.ts](https://git.gay/leahinmoonlight/pluralmind/src/branch/main/src/types.ts) since it documents everything in far more detail.
-
 ### Want a full example?
 
-Our Pluralmind browser extension is open source, and uses this library. You can check out its full implementation [over here](https://git.gay/leahinmoonlight/pluralmind-browser).
+Our Pluralmind browser extension is open source, and uses this library. Feel free to check out its [full implementation](https://github.com/leahinmoonlight/pluralmind-browser).
