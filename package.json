@@ -25,6 +25,7 @@
         "type": "git",
         "url": "git+https://github.com/leahinmoonlight/pluralmind.git"
     },
+    "homepage": "https://docs.pluralmind.chat",
     "devEngines": {
         "packageManager": {
             "name": "pnpm",
