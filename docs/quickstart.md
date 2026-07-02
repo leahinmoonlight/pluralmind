@@ -36,8 +36,6 @@ Or, want to use Pluralmind directly in an HTML page without a bundler? Don't wor
 <script src="https://unpkg.com/pluralmind@1"></script>
 ```
 
-Note: You can also pin to specific version (like 1.1.0), if you'd like!
-
 :::
 
 ## A Simple Example

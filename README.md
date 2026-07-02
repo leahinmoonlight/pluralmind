@@ -22,7 +22,7 @@ npm install pluralmind
 
 Or, want to use Pluralmind directly in an HTML page without a bundler? Don't worry, you can also embed it from a CDN:
 ```html
-<script src="https://cdn.jsdelivr.net/npm/pluralmind@1.1.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/pluralmind@1"></script>
 ```
 
 ## Integrating Pluralmind
