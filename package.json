@@ -1,6 +1,6 @@
 {
     "name": "pluralmind",
-    "version": "1.1.1",
+    "version": "1.1.2",
     "description": "Let folks know who's speaking. Pluralmind allows plural folks to share which of their members is sending a message on Twitch.",
     "scripts": {
         "build": "tsdown",
