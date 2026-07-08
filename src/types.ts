@@ -111,6 +111,14 @@ export interface PluralmindConfig {
      * Defaults to `true`.
      */
     ignoreLeadingWhitespace: boolean
+
+    /**
+     * Whether a leading mention should be ignored when detecting proxy
+     * prefixes.
+     *
+     * Defaults to `true`.
+     */
+    ignoreLeadingMention: boolean
 }
 
 export interface CacheHit {

@@ -84,6 +84,7 @@ export const detectProxyInMessage = (system: System, body: string): { member: Me
 
     // Ensure the prefix isn't empty
     let proxyPrefix = splitByColon[0]
+    if (config.ignoreLeadingMention) proxyPrefix = proxyPrefix?.replace(/^@\w{4,25} /, '')
     if (config.ignoreLeadingWhitespace) proxyPrefix = proxyPrefix?.trimStart()
     if (!proxyPrefix?.length) return
 
