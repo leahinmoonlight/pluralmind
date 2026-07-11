@@ -40,7 +40,10 @@ export const loadSystem = (id: TwitchId): Promise<System | null> => {
 
     pendingFetches[id] = new Promise(async (resolve, reject) => {
         try {
-            const response = await fetch(`https://pluralmind.chat/api/system/${id}`)
+            const response = await fetch(
+                `https://pluralmind.chat/api/system/${id}`,
+                { credentials: 'omit' },
+            )
             resolve(response.ok ? (await response.json()) : null)
         } catch (e) {
             reject(e)
