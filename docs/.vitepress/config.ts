@@ -10,14 +10,23 @@ export default defineConfig({
         // https://vitepress.dev/reference/default-theme-config
         nav: [
             { text: 'Pluralmind', link: 'https://pluralmind.chat' },
-            { text: 'Guide', link: '/quickstart' },
+            { text: 'Integrations', link: '/integrations' },
+            { text: 'Developer Guide', link: '/quickstart' },
             { text: 'API Reference', link: '/api' },
-            { text: 'REST API', link: 'https://pluralmind.chat/redoc#operation/get_system_api_system__id__get' },
+            { text: 'REST API', link: '/rest-api' },
         ],
 
         sidebar: [
             {
-                text: 'Guide',
+                text: 'Integrations',
+                items: [
+                    { text: 'OBS Chat Dock', link: '/integrations/obs-chat-dock' },
+                    { text: 'Slime2 Chat Widget', link: '/integrations/slime2-chat-widget' },
+                    { text: 'Streamlabs Chat Widget', link: '/integrations/streamlabs-chat-widget' },
+                ]
+            },
+            {
+                text: 'Developer Guide',
                 items: [
                     { text: 'Quickstart', link: '/quickstart' },
                 ]
@@ -28,12 +37,12 @@ export default defineConfig({
             },
             {
                 text: 'REST API',
-                link: 'https://pluralmind.chat/redoc#operation/get_system_api_system__id__get',
+                link: '/rest-api',
             },
         ],
 
         socialLinks: [
-            { icon: 'git', link: 'https://github.com/leahinmoonlight/pluralmind' },
+            { icon: 'github', link: 'https://github.com/leahinmoonlight/pluralmind' },
             { icon: 'discord', link: 'https://discord.gg/3TseAS2fne' },
             { icon: 'bluesky', link: 'https://bsky.app/profile/leahinmoonlight.com' },
         ]
