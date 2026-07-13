@@ -52,5 +52,8 @@ export default defineConfig({
             light: 'catppuccin-latte',
             dark: 'catppuccin-mocha',
         },
-    }
+    },
+    sitemap: {
+        hostname: 'https://docs.pluralmind.chat',
+    },
 })
