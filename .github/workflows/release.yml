@@ -20,7 +20,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v7
 
-      - name: Get the version from package.json and sanity check it matches our release
+      - name: Get the version from package.json and verify it matches our release
         run: |
           CODE_VERSION=$(jq -r .version package.json)
           RELEASE_VERSION="${{ github.event.release.tag_name }}"
@@ -41,6 +41,9 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install
+
+      - name: Run tests
+        run: pnpm test
 
       - name: Build library
         run: pnpm build

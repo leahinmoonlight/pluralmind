@@ -1,13 +1,15 @@
 {
     "name": "pluralmind",
-    "version": "1.2.1",
+    "version": "2.0.0",
     "description": "Let folks know who's speaking. Pluralmind allows plural folks to share which of their members is sending a message on Twitch.",
     "scripts": {
         "build": "tsdown",
         "dev": "tsdown --watch",
         "typecheck": "tsc --noEmit",
+        "test": "vitest run",
+        "test:dev": "vitest",
         "prepare": "pnpm build",
-        "docs:api": "typedoc",
+        "docs:api": "typedoc && node docs/.vitepress/hide-hidden-category.js",
         "docs:dev": "pnpm docs:api && vitepress dev docs",
         "docs:build": "pnpm docs:api && vitepress build docs",
         "docs:deploy": "pnpm docs:build && wrangler pages deploy docs/.vitepress/dist --project-name pluralmind-docs"
@@ -41,7 +43,9 @@
         "typedoc-plugin-markdown": "^4.12.0",
         "typedoc-vitepress-theme": "^1.1.3",
         "typescript": "^6.0.3",
+        "vite": "^8.1.5",
         "vitepress": "^1.6.4",
+        "vitest": "^4.1.10",
         "vue": "^3.5.38",
         "wrangler": "^4.103.0"
     },

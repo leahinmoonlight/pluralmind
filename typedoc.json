@@ -16,7 +16,9 @@
         "Interfaces",
         "Type Aliases",
         "*",
-        "Advanced",
+        "Advanced Functions",
+        "Advanced Interfaces",
+        "Hidden",
     ],
     "sort": [
         "kind",
