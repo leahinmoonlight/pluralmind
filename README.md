@@ -22,7 +22,7 @@ npm install pluralmind
 
 Or, want to use Pluralmind directly in an HTML page without a bundler? Don't worry, you can also embed it from a CDN:
 ```html
-<script src="https://cdn.jsdelivr.net/npm/pluralmind@1"></script>
+<script src="https://cdn.jsdelivr.net/npm/pluralmind@2"></script>
 ```
 
 ## Integrating Pluralmind
@@ -42,7 +42,7 @@ if (pm) {
     console.log(pm.member.name)  // "Leah"
     console.log(pm.color)        // "#eb98ca"
     console.log(pm.pronouns)     // "she/her"
-    console.log(pm.body)         // "hihi chat~" (the proxy prefix was removed)
+    console.log(pm.body)         // "hihi chat~" (the proxy was removed)
     // That's it! You can use this data to change how you render this member's message.
 }
 ```

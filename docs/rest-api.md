@@ -11,16 +11,16 @@ While our [JavaScript library](/quickstart) is usually the easiest path, you can
 To load a system's information, send a `GET` request to this endpoint:
 
 ```
-https://pluralmind.chat/api/system/<twitch_id_or_username>
+https://pluralmind.chat/api/v2/system/<twitch_id_or_username>
 ```
 
 So for example:
 ```
 # Get by Twitch ID
-https://pluralmind.chat/api/system/21711703
+https://pluralmind.chat/api/v2/system/21711703
 
 # Get by Twitch username
-https://pluralmind.chat/api/system/leahinmoonlight
+https://pluralmind.chat/api/v2/system/leahinmoonlight
 ```
 
 ::: tip
@@ -41,8 +41,9 @@ If a system was found, you'll get back some data that looks like this:
             "id": 42,
             "name": "Eve",
             "proxies": [
-                "e",
-                "eve"
+                { "text": "e:", "type": 1 },
+                { "text": "eve:", "type": 1 },
+                { "text": "-e", "type": 2 }
             ],
             "case_sensitive": false,
             "color": "#f397c9",

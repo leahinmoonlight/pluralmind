@@ -29,11 +29,11 @@ Or, want to use Pluralmind directly in an HTML page without a bundler? Don't wor
 :::code-group
 
 ```html [jsdelivr]
-<script src="https://cdn.jsdelivr.net/npm/pluralmind@1"></script>
+<script src="https://cdn.jsdelivr.net/npm/pluralmind@2"></script>
 ```
 
 ```html [unpkg]
-<script src="https://unpkg.com/pluralmind@1"></script>
+<script src="https://unpkg.com/pluralmind@2"></script>
 ```
 
 :::
@@ -58,7 +58,7 @@ if (pm) {
     console.log(pm.member.name)  // "Leah"
     console.log(pm.color)        // "#eb98ca"
     console.log(pm.pronouns)     // "she/her"
-    console.log(pm.body)         // "hihi chat~" (the proxy prefix was removed)
+    console.log(pm.body)         // "hihi chat~" (the proxy was removed)
 }
 ```
 
@@ -74,7 +74,7 @@ if (pm) {
     console.log(pm.member.name)  // "Leah"
     console.log(pm.color)        // "#eb98ca"
     console.log(pm.pronouns)     // "she/her"
-    console.log(pm.body)         // "hihi chat~" (the proxy prefix was removed)
+    console.log(pm.body)         // "hihi chat~" (the proxy was removed)
 }
 ```
 
