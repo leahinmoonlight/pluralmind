@@ -53,6 +53,12 @@ export interface Member {
      */
     case_sensitive: boolean
 
+    /**
+     * Whether a space needs to separate the proxy from the rest of the
+     * message.
+     */
+    require_space: boolean
+
     /** The color this member would like their name displayed as in chat. */
     color: string | null
 

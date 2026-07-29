@@ -379,6 +379,50 @@ describe('proxy detection', () => {
                 },
             ],
         },
+
+        {
+            system: systems.retrograde,
+            cases: [
+                {
+                    label: 'prefix without a required space',
+                    fragments: [{ type: 'text', text: 'd:hihi' }],
+                    expected: {
+                        member: 'dani',
+                        proxyUsed: 'd:',
+                        cleanFragments: [{ type: 'text', text: 'hihi' }],
+                        changedFragments: {
+                            0: { type: 'text', text: 'hihi' },
+                        },
+                    },
+                },
+
+                {
+                    label: 'suffix without a required space',
+                    fragments: [{ type: 'text', text: 'hihi-d' }],
+                    expected: {
+                        member: 'dani',
+                        proxyUsed: '-d',
+                        cleanFragments: [{ type: 'text', text: 'hihi' }],
+                        changedFragments: {
+                            0: { type: 'text', text: 'hihi' },
+                        },
+                    },
+                },
+
+                {
+                    label: 'suffix without a required space (but still with a space)',
+                    fragments: [{ type: 'text', text: 'hihi -d' }],
+                    expected: {
+                        member: 'dani',
+                        proxyUsed: '-d',
+                        cleanFragments: [{ type: 'text', text: 'hihi ' }],
+                        changedFragments: {
+                            0: { type: 'text', text: 'hihi ' },
+                        },
+                    },
+                },
+            ],
+        },
     ]
 
     scenarios.forEach(({ cases, config, system }, systemIdx) => {
@@ -417,7 +461,7 @@ describe('getProxiedMessage', () => {
         // Verify that autoproxy can still be overridden
         const pm2 = getProxiedMessage(systems.retrograde, 'd: hihi!')
         expect(pm2?.member?.name).toBe('dani')
-        expect(pm2?.body).toBe('hihi!')
+        expect(pm2?.body).toBe(' hihi!')
     })
 
     it('still compiles a single body string even when passed fragments', () => {

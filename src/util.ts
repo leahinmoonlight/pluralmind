@@ -19,9 +19,8 @@ export const consumeFragmentsToMatchProxy = <TFragment extends MessageFragment>(
 
     // Start with the full proxy text so we can keep track of what we're still
     // looking for as we match parts of it
-    // Note: We add a space because proxies must be separated from the rest of
-    // the message content
-    let remainingProxy = type === 'prefix' ? `${proxy.text} ` : ` ${proxy.text}`
+    let remainingProxy = proxy.text
+    if (member.require_space) remainingProxy = type === 'prefix' ? `${proxy.text} ` : ` ${proxy.text}`
 
     // Flip everything around if we're trying to detect a suffix
     if (type === 'suffix') {

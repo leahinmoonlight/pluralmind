@@ -46,6 +46,7 @@ If a system was found, you'll get back some data that looks like this:
                 { "text": "-e", "type": 2 }
             ],
             "case_sensitive": false,
+            "require_space": true,
             "color": "#f397c9",
             "pronouns": "she/her"
         }

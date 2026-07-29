@@ -18,6 +18,7 @@ export const makeMember = (data: RequireKeys<Member, 'proxies'>): Member => {
         id,
         name: `Member ${id}`,
         case_sensitive: false,
+        require_space: true,
         color: null,
         pronouns: null,
         ...data,
@@ -73,6 +74,7 @@ export const makeSampleSystems = () => ({
             }),
             makeMember({
                 name: 'dani',
+                require_space: false,
                 proxies: [
                     { text: 'd:', type: ProxyType.Prefix },
                     { text: '💚', type: ProxyType.Prefix },
