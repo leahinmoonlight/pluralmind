@@ -1,10 +1,12 @@
 {
     "name": "pluralmind",
-    "version": "2.0.1",
+    "version": "2.1.0",
     "description": "Let folks know who's speaking. Pluralmind allows plural folks to share which of their members is sending a message on Twitch.",
     "scripts": {
         "build": "tsdown",
         "dev": "tsdown --watch",
+        "serve": "http-server dist -p 8080 --cors -c-1",
+        "dev:serve": "concurrently -k -n tsdown,http-server -c magenta,cyan \"pnpm dev\" \"pnpm serve\"",
         "typecheck": "tsc --noEmit",
         "test": "vitest run",
         "test:dev": "vitest",
@@ -38,6 +40,9 @@
     "type": "module",
     "devDependencies": {
         "@catppuccin/vitepress": "^0.1.2",
+        "concurrently": "^10.0.4",
+        "http-server": "^14.1.1",
+        "jsdom": "^30.0.1",
         "tsdown": "^0.22.3",
         "typedoc": "^0.28.19",
         "typedoc-plugin-markdown": "^4.12.0",

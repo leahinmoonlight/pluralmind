@@ -1,0 +1,63 @@
+{
+    "priority": 10,
+    "chatBoxSettings": {},
+    "pic": "",
+    "from": "leahinmoonlight",
+    "body": "leahinmDance here's a little message 🩷 leahinmNya for testing the Streamlabs integration MikuHeart leahinmWow leahinmWave",
+    "command": "PRIVMSG",
+    "tags": {
+        "badge-info": "",
+        "badges": "ruby-pixel-heart---together-for-good-24/1",
+        "client-nonce": "84f7e3488f13435e890edcd2e006ea20",
+        "color": "#F993CE",
+        "display-name": "leahinmoonlight",
+        "emotes": "emotesv2_a73ce97b944c4b14884cc4d1def87275:0-11/emotesv2_85b6632f2da746b3a241e7b6dcd8be98:39-48/emotesv2_d8152dbd277e4377b84cadc47f202973:99-108/emotesv2_72f27e5dcb5442e4a939a4fd461d3f1d:110-120",
+        "first-msg": "0",
+        "flags": "",
+        "id": "2e2b4953-e601-4619-8abb-7951fd3105e5",
+        "mod": "0",
+        "returning-chatter": "0",
+        "room-id": "1326472540",
+        "subscriber": "0",
+        "tmi-sent-ts": "1785708495249",
+        "turbo": "0",
+        "user-id": "21711703",
+        "user-type": ""
+    },
+    "payload": {
+        "raw": "@badge-info=;badges=ruby-pixel-heart---together-for-good-24/1;client-nonce=84f7e3488f13435e890edcd2e006ea20;color=#F993CE;display-name=leahinmoonlight;emotes=emotesv2_a73ce97b944c4b14884cc4d1def87275:0-11/emotesv2_85b6632f2da746b3a241e7b6dcd8be98:39-48/emotesv2_d8152dbd277e4377b84cadc47f202973:99-108/emotesv2_72f27e5dcb5442e4a939a4fd461d3f1d:110-120;first-msg=0;flags=;id=2e2b4953-e601-4619-8abb-7951fd3105e5;mod=0;returning-chatter=0;room-id=1326472540;subscriber=0;tmi-sent-ts=1785708495249;turbo=0;user-id=21711703;user-type= :leahinmoonlight!leahinmoonlight@leahinmoonlight.tmi.twitch.tv PRIVMSG #leahingreenroom :leahinmDance here's a little message 🩷 leahinmNya for testing the Streamlabs integration MikuHeart leahinmWow leahinmWave",
+        "tags": {
+            "badge-info": "",
+            "badges": "ruby-pixel-heart---together-for-good-24/1",
+            "client-nonce": "84f7e3488f13435e890edcd2e006ea20",
+            "color": "#F993CE",
+            "display-name": "leahinmoonlight",
+            "emotes": "emotesv2_a73ce97b944c4b14884cc4d1def87275:0-11/emotesv2_85b6632f2da746b3a241e7b6dcd8be98:39-48/emotesv2_d8152dbd277e4377b84cadc47f202973:99-108/emotesv2_72f27e5dcb5442e4a939a4fd461d3f1d:110-120",
+            "first-msg": "0",
+            "flags": "",
+            "id": "2e2b4953-e601-4619-8abb-7951fd3105e5",
+            "mod": "0",
+            "returning-chatter": "0",
+            "room-id": "1326472540",
+            "subscriber": "0",
+            "tmi-sent-ts": "1785708495249",
+            "turbo": "0",
+            "user-id": "21711703",
+            "user-type": ""
+        },
+        "prefix": "leahinmoonlight!leahinmoonlight@leahinmoonlight.tmi.twitch.tv",
+        "command": "PRIVMSG",
+        "params": [
+            "#leahingreenroom"
+        ],
+        "crlf": "leahinmDance here's a little message 🩷 leahinmNya for testing the Streamlabs integration MikuHeart leahinmWow leahinmWave"
+    },
+    "owner": false,
+    "subscriber": false,
+    "userType": "user",
+    "platform": "twitch_account",
+    "platformAccountId": null,
+    "messageId": "2e2b4953-e601-4619-8abb-7951fd3105e5",
+    "access_token": null,
+    "type": null
+}
