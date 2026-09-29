@@ -51,7 +51,7 @@ export const loadSystem = (id: TwitchId): Promise<System | null> => {
         try {
             const response = await fetch(
                 `https://pluralmind.chat/api/v2/system/${id}`,
-                { credentials: 'omit' },
+                { credentials: 'omit', cache: 'no-store' },
             )
             if (response.ok) return await response.json()
             if (response.status === 404) return null
